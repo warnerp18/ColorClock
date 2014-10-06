@@ -1,5 +1,5 @@
 
-div {
+ div {
 
     min-width: 100%;
     margin: auto;
@@ -24,11 +24,16 @@ div {
     position: absolute;
     top: 50%;
     left: 50%;
-	background-color: rgb(111,115,230);
-	transform: translate(-50%, -50%);
-  
-}
+    background: radial-gradient(#6f73e6, #707382, #434695);
+    transform: translate(-50%, -50%);
+    -webkit-animation: pulse 10s infinite alternate;
 
-.center:hover {
-	background: radial-gradient(#6f73e6, #707382, #434695);
+  }
+
+  @-webkit-keyframes pulse {
+  0% {background: #6f73e6, #707382, #434695}
+  25% {background: #6B6FDB}
+  50% {background: #8E91F5}
+  75% {background: #B4B6F0}
+  100% {background: #D3D4F2}
 }
