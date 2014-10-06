@@ -1,39 +1,19 @@
-
- div {
-
-    min-width: 100%;
-    margin: auto;
-
-}
-
 *, *::before, *::after {
-
     box-sizing: border-box;
 }
 
-.center::after {
+h1 {
+  margin:auto;
+  min-width: 100%;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate (-50%, -50%);
+}
 
-    content: "";
+h1::after {
+    content:"";
     display: block;
     padding-top: 100%;
-
 }
 
-.center {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background: radial-gradient(#6f73e6, #707382, #434695);
-    transform: translate(-50%, -50%);
-    -webkit-animation: pulse 10s infinite alternate;
-
-  }
-
-  @-webkit-keyframes pulse {
-  0% {background: #6f73e6, #707382, #434695}
-  25% {background: #6B6FDB}
-  50% {background: #8E91F5}
-  75% {background: #B4B6F0}
-  100% {background: #D3D4F2}
-}
