@@ -1,0 +1,7 @@
+touch .git/hooks/post-commit
+sublime .git/hooks/post-
+
+#!/bin/sh
+git checkout gh-pages
+git rebase master
+git checkout master
