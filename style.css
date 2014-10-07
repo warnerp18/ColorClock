@@ -1,13 +1,13 @@
 
 *, *::before, *::after {
-    box-sizing: border-box; 
+   
 }
+
 
 div {
   position: absolute;
   top: 50%;
   left:50%;
-  transform: translate (-50%, -50%);
   font-family: fantasy;
   color: aliceblue;
  font-size: 5em;
