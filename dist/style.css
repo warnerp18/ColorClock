@@ -1,46 +1,30 @@
 *, *::before, *::after {
     -moz-box-sizing: border-box;
-         box-sizing: border-box;
+         box-sizing: border-box; 
 }
 
-h1 {
+
+div {
   margin:auto;
-  min-width: 100%;
+  width: 100%;
   position: absolute;
   top: 50%;
   left:50%;
   -webkit-transform: translate (-50%, -50%);
       -ms-transform: translate (-50%, -50%);
           transform: translate (-50%, -50%);
+  font-family: fantasy;
+  color: aliceblue;
+ font-size: 5em;
 }
 
-h1::after {
+
+div:after {
     content:"";
     display: block;
     padding-top: 100%;
 }
 
-.center {
-  font-size: 3em;
-    color:white;
-    font-family:'Averia Sans Libre';
-    text-align: center;
-    font-weight: lighter;
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    max-width: 100%;
-    padding: 2rem;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -webkit-transition: all .5s ease;
-            transition: all .5s ease;
-    -webkit-transform-origin: center center;
-        -ms-transform-origin: center center;
-            transform-origin: center center;
-    z-index: 1;
-    min-width: 320px;
-    }
-
+h1 {
+  margin: 0;
+}
