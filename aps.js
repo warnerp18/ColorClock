@@ -33,7 +33,7 @@ function app() {
         var ranges = [24, 60, 60], //ranges will be used in function below. 24 represents 24 hours, 60 = 60 minutes and 60=60 seconds
             result = []; // not sure about this one.
 
-        times.forEach(function(time, index) {
+        times.forEach(function(time, index) { //forEach does not do return anything unlike map
             result[index] = ~~ (time / ranges[index] * 255); //unsure about all these. where is index defined? what does result mean?
         });
 
@@ -44,6 +44,10 @@ function app() {
     var body = document.querySelector('body');
 
     setInterval(handleSecond, 1000);
-
-
 }
+
+/*
+Things learned/questions:
+r
+
+ */
