@@ -3,11 +3,11 @@ window.onload = app;
 function app() {
     "use strict";
 
-    function handleSecond() {
+    function handleSecond() { //'handleSecond' because this is what is going to be handle last/2nd after the code is all done
         try {
-            count();
-        } catch (e) {
-            console.log("error:", e, e.stack);
+            count(); //this will try the function called 'count'
+        } catch (e) { // e is the name we are giving for an error warning
+            console.log("error:", e, e.stack); // if there is an error an "error" message will pop up and tell you what line the error is on
         }
     }
 
@@ -19,7 +19,7 @@ function app() {
             return num < 10 ? "0" + num : num; // if the hh, mm, ss is less than 10 (0-9) add a "0"; if not, leave as is.
         });
 
-        center.textContent = time.join(":"); //span is a var listed @ bottom. Tells JS to join time with ':' in between each and put it into the span tags of my html.
+        div.textContent = time.join(":"); //span is a var listed @ bottom. Tells JS to join time with ':' in between each and put it into the span tags of my html.
         body.style['background-color'] =
             "rgb(" +
             convertTimeToRGB(time).join(',') + //telling html to associate background color to time. using hh:mm:ss and converting to rgb(Red, Blue, Green)
@@ -40,7 +40,7 @@ function app() {
         return result;
     }
 
-    var center = document.querySelector('#center');
+    var div = document.querySelector('div');
     var body = document.querySelector('body');
 
     setInterval(handleSecond, 1000);

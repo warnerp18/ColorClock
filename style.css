@@ -10,7 +10,11 @@ div {
   top: 50%;
   left:50%;
   transform: translate (-50%, -50%);
+  font-family: fantasy;
+  color: aliceblue;
+ font-size: 5em;
 }
+
 
 div:after {
     content:"";
@@ -18,4 +22,6 @@ div:after {
     padding-top: 100%;
 }
 
-
+h1 {
+  margin: 0;
+}
